@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Tipos, Amenazas y Protección</title>
+</head>
+
+<body>
+    <div id="contenedorPrincipal">
+        
+        <header id= "encabezado">
+            <h1><h1>Web Application Firewall (WAF): Implementación, Amenazas y Protección que maneja WAF</h1></h1>
+        </header>
+        
+        <nav id="menuNav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conceptosBasicos.html">Conceptos Generales</a></li>
+                <li><a href="implementacion-proteccion.html.">Tipos, Amenazas y Protección</a></li>
+                <li><a href="evolucion-comparativa.html">Evolución y Comparacion</a></li>
+                <li><a href="autor.html">Autor</a></li>
+                <li><a href="bibliografia.html">Bibliografía</a></li>
+            </ul>
+        </nav>
+        
+        <main class="contenido">
+            <div class="bloqueInfo">
+
+                <h2 class="tituloSecundario">Tipos de Implementación de un WAF</h2>
+                <div class="textoParrafos">
+                    <p>Un WAF puede adaptarse a diferentes entornos y necesidades empresariales, lo que lo convierte en una solución extremadamente versátil. A la hora de implementar uno, es fundamental elegir la opción que mejor se ajuste a nuestra infraestructura tecnológica, al volumen de tráfico web y a los requisitos de seguridad específicos de nuestras aplicaciones.</p>
+                    <p>Existen tres tipos principales de implementación, cada uno con sus propias características, ventajas y desafíos. Conocer estas opciones nos permitirá tomar decisiones informadas que garanticen la efectividad, el rendimiento y la escalabilidad del sistema.</p>
+                </div>
+
+                 <div class="contenedorImagen">
+                    <img src="IMG/tiposImplementacion.png">
+                </div>
+
+                <h3 class="tituloTerceario">WAF basado en la nube</h3>
+
+                <div class="textoParrafos">
+                    <p>Un WAF basado en la nube es una opción de implementación asequible y fácil de implementar que se puede desplegar rápidamente. Los WAF basados en la nube tienen costos iniciales mínimos y suelen estar basados en la suscripción. Los WAF basados en la nube tienen acceso a inteligencia sobre amenazas constantemente actualizada y también pueden ofrecer servicios gestionados para ayudarle a definir reglas de seguridad y responder a los ataques a medida que se producen.</p>
+                    <p>Lo ideal es que un WAF basado en la nube ofrezca la opción de implementarse en línea o como un servicio basado en API, fuera de la ruta (OOP). Una implementación basada en API y OOP ofrece varias ventajas únicas que permiten optimizarla para entornos multi-cloud, entornos locales, entornos híbridos, etc.</p>
+                    <p>En los últimos años, los WAF basados en la nube se han convertido en el tipo de implementación predominante para la mayoría de las organizaciones a nivel mundial por las razones que se enumeran a continuación.</p>
+                </div>
+
+                <h4 class="tituloCuaternario">¿Quién debería utilizar un WAF basado en la nube?</h4>
+                
+                <div class="textoParrafos">
+                    <p>Los WAF basados en la nube se han convertido en una opción popular para organizaciones de todos los tamaños, desde empresas a pequeños negocios, ya que son capaces de proporcionar altos niveles de seguridad con costos de inversión inicial mínimos y sin necesidad de una amplia experiencia en seguridad interna.</p>
+                </div>
+
+                <h4 class="tituloCuaternario">Ventajas y desventajas de un WAF basado en la nube</h4>
+
+                <div class="textoParrafos">
+                    <p>Los WAF basados en la nube tienen muchas ventajas y algunas desventajas que un posible comprador debe considerar.</p>
+                </div>
+
+                <h5 class="tituloQuinto">Ventajas</h5>
+
+                <div class="lista">
+                    <ul>
+                        <li>Asequible</li>
+                        <li>Fácil de implementar</li>
+                        <li>Inversión inicial mínima</li>
+                        <li>Niveles de protección constante, gestión centralizada y elaboración de informes en todos y cada uno de los entornos.</li>
+                        <li>Suscripción basada en la seguridad como servicio</li>
+                        <li>Actualización automática por parte de un proveedor externo</li>
+                        <li>La mejor opción de implementación para entornos multi-cloud</li>
+                    </ul>
+                </div>
+
+                <h5 class="tituloQuinto">Desventajas</h5>
+
+                <div class="lista">
+                    <ul>
+                        <li>Algunos sectores (como el gubernamental o el de defensa) están obligados a mantener toda la infraestructura y los datos a nivel local, lo que elimina los WAF basados en la nube como posible opción de implementación</li>
+                        <li>La mayoría de los WAF basados en la nube requieren la redirección del tráfico de aplicaciones, lo que aumenta la posibilidad de latencia.</li>
+                    </ul>
+                </div>
+                
+                 <div class="contenedorImagen">
+                    <img src="IMG/WAFnube.png">
+                </div>
+
+                <h3 class="tituloTerceario">WAF Basado en Software</h3>
+
+                <div class="textoParrafos">
+                    <p>Un WAF basado en software es una alternativa a un WAF basado en hardware. Un WAF basado en software ejecuta el WAF como un dispositivo virtual o un agente, ya sea a nivel local, en una nube privada o en una nube pública.</p>
+                </div>
+
+                <h4 class="tituloCuaternario">¿Quién debería utilizar un WAF basado en software?</h4>
+                
+                <div class="textoParrafos">
+                    <p>Los WAF basados en software suelen ser aprovechados por organizaciones con aplicaciones alojadas en centros de datos de nubes privadas y/o públicas. También pueden ser populares entre las organizaciones que no tienen el presupuesto y/o la capacidad de soportar WAF basados en hardware, pero que todavía quieren gestionar su propio WAF o son reacios a implementar un WAF basado en la nube.</p>
+                </div>
+
+                <h4 class="tituloCuaternario">Ventajas y desventajas de un WAF basado en software</h4>
+
+                <div class="textoParrafos">
+                    <p>Los WAF basados en software tienen muchas ventajas y algunas desventajas que un posible comprador debe considerar.</p>
+                </div>
+
+                <h5 class="tituloQuinto">Ventajas</h5>
+
+                <div class="lista">
+                    <ul>
+                        <li>Opciones de personalización adicionales (si tiene la experiencia y/o los recursos de seguridad internos)</li>
+                        <li>Costos iniciales, de implementación y de mantenimiento más bajos que los de un WAF basado en hardware (ver más abajo)</li>
+                    </ul>
+                </div>
+
+                <h5 class="tituloQuinto">Desventajas</h5>
+
+                <div class="lista">
+                    <ul>
+                        <li>Implementación compleja</li>
+                        <li>Requiere la instalación de código en el servidor de aplicaciones</li>
+                        <li>Depende de los recursos del servidor de aplicaciones para funcionar eficazmente</li>
+                        <li>Las actualizaciones deben ser gestionadas por el usuario final</li>
+                    </ul>
+                </div>
+            
+                <div class="contenedorImagen">
+                    <img src="IMG/implementacionSoftware.png">
+                </div>
+                
+                <h3 class="tituloTerceario">WAF Basado en Hardware</h3>
+
+                <div class="textoParrafos">
+                    <p>Un WAF basado en hardware (o comúnmente denominado WAF basado en red) se instala localmente en una red. La mayoría de las veces son las formas más caras de WAF, ya que requieren mantenimiento y espacio de almacenamiento. Su objetivo principal es minimizar la latencia.</p>
+                    <p>En los últimos años, los WAF basados en hardware se han vuelto cada vez más obsoletos, ya que los WAF basados en la nube se han convertido en el tipo de implementación predominante.</p>
+                </div>
+
+                <h4 class="tituloCuaternario">¿Quién debería utilizar un WAF basado en hardware?</h4>
+                
+                <div class="textoParrafos">
+                    <p>Los WAF basados en hardware suelen ser provechosos para las grandes organizaciones que cuentan con el presupuesto y el personal necesarios para gestionar los dispositivos y la infraestructura de TI locales. Además, las organizaciones aprovecharán los WAF basados en hardware cuando la velocidad y el rendimiento de las aplicaciones sean críticos, o cuando ejecuten aplicaciones sensibles en entornos locales, como las instituciones gubernamentales, las agencias de seguridad nacional, la industria de defensa, etc.</p>
+                </div>
+
+                <h4 class="tituloCuaternario">Ventajas y desventajas de un WAF basado en hardware</h4>
+
+                <div class="textoParrafos">
+                    <p>Los WAF basados en hardware tienen muchas ventajas y algunas desventajas que un posible comprador debe considerar.</p>
+                </div>
+
+                <h5 class="tituloQuinto">Ventajas</h5>
+
+                <div class="lista">
+                    <ul>
+                        <li>Menor latencia</li>
+                        <li>Altamente personalizable</li>
+                        <li>Con espacio de aire en su totalidad</li>
+                    </ul>
+                </div>
+
+                <h5 class="tituloQuinto">Desventajas</h5>
+
+                <div class="lista">
+                    <ul>
+                        <li>Gran inversión inicial</li>
+                        <li>Costos de mantenimiento continuos</li>
+                        <li>Elevados costos operativos y de personal de TI</li>
+                        <li>Actualizaciones y mantenimiento gestionados por el usuario final</li>
+                    </ul>
+                </div>
+                
+                <div class="contenedorImagen">
+                    <img src="IMG/WAFHardware.png">
+                </div>
+                
+
+
+                <table class="tabla">
+                    <tr>
+                        <th>Tipo de WAF</th>
+                        <th>Ventajas principales</th>
+                        <th>Limitaciones principales</th>
+                    </tr>
+                    <tr>
+                        <td>Basado en hardware</td>
+                        <td>Baja latencia y alto rendimiento</td>
+                        <td>Costo elevado y mantenimiento complejo</td>
+                    </tr>
+                    <tr>
+                        <td>Basado en software</td>
+                        <td>Alta personalización e integración con otras herramientas</td>
+                        <td>Mayor consumo de recursos y configuración más compleja</td>
+                    </tr>
+                    <tr>    
+                        <td>En la nube (SaaS)</td>
+                        <td>Implementación rápida, escalable y fácil de mantener</td>
+                        <td>Menor control sobre reglas y políticas avanzadas</td>
+                    </tr>   
+                </table>
+
+                <div class="textoParrafos">
+                    <p>Cada una de estas modalidades tiene un papel que desempeñar según el contexto y los objetivos del negocio. En algunos casos, incluso puede ser recomendable combinar dos tipos de implementación para obtener una estrategia de seguridad más robusta y flexible.</p>
+                </div>
+
+
+                <h2 class="tituloSecundario">Amenazas que bloquea</h2>
+                <div class="textoParrafos">
+                    <p>Los WAF son una herramienta poderosa contra una variedad de ataques cibernéticos. Entender los tipos de amenazas que pueden prevenir es esencial para cualquier empresa que busque proteger su infraestructura digital. A continuación, exploramos algunos de los ataques más comunes que un WAF puede ayudar a mitigar</p>
+                </div>
+
+
+                <h3 class="tituloTerceario">Ataques de inyección</h3>
+                <div class="textoParrafos">
+                    <p>Los defectos de inyección, como la inyección de SQL, NoSQL, OS y el protocolo ligero de acceso a directorios (LDAP), han sido un eterno favorito entre los hackers durante algún tiempo. Un defecto de inyección se produce cuando se insertan datos sospechosos en una aplicación como un comando o una consulta. Estos datos hostiles pueden engañar al intérprete para que ejecute comandos no deseados o acceda a datos sin la debida autorización.</p>
+                    <p>La inyección de código más común es la inyección SQL, que es un ataque que se hace enviando código malformado al servidor de la base de datos. Es un tipo de ataque simple y rápido que casi cualquier persona con acceso a Internet puede llevar a cabo, ya que las secuencias de comandos de inyección SQL están disponibles para su descarga y se adquieren fácilmente.</p>
+                </div>
+                <div class="contenedorImagen">
+                    <img src="IMG/AtaqueInyeccion.png">
+                </div>
+
+
+                <h3 class="tituloSecundario">Ataques de localización de recursos predecibles</h3>
+                <div class="textoParrafos">
+                    <p>La localización predecible de recursos es una técnica de ataque utilizada para descubrir el contenido y la funcionalidad oculta de un sitio web. Al hacer conjeturas por medio de la fuerza bruta, un atacante puede adivinar nombres de archivos y directorios que no están destinados a ser vistos por el público. El ataque por fuerza bruta en los nombres de los archivos es fácil porque los archivos/las rutas suelen tener convenciones de nomenclatura comunes y residen en ubicaciones estándar. Estos pueden incluir archivos temporales, archivos de copia de seguridad, registros, secciones administrativas del sitio, archivos de configuración, aplicaciones de demostración y archivos de muestra. Estos archivos pueden revelar información sensible sobre el sitio web, los componentes internos de la aplicación web, la información de la base de datos, las contraseñas, los nombres de las máquinas, las rutas de los archivos a otras áreas sensibles, etc.</p>
+                    <p>Esto no solo ayudará al atacante a identificar la superficie del sitio, lo que puede conducir a vulnerabilidades adicionales del sitio, sino que también puede revelar información valiosa a un atacante sobre el entorno o sus usuarios. La localización predecible de recursos también se conoce como navegación forzada, enumeración de archivos y enumeración de directorios.</p>
+                </div>
+                <div class="contenedorImagen">
+                    <img src="IMG/ALRP.png">
+                </div>
+
+
+                <h3 class="tituloSecundario">DDoS HTTP (saturación)</h3>
+                <div class="textoParrafos">
+                    <p>La saturación HTTP es un tipo de ataque de denegación de servicio distribuido utilizado por los hackers para atacar servidores y aplicaciones web. Las saturaciones HTTP funcionan dirigiendo grandes cantidades de solicitudes HTTP a una página web para sobrecargar los servidores de destino con solicitudes.</p>
+                    <p>En una saturación HTTP, los clientes HTTP, como los navegadores web, interactúan con una aplicación o servidor para enviar solicitudes HTTP. La solicitud puede ser "GET" o "POST". El objetivo del ataque es obligar al servidor a asignar tantos recursos como sea posible para servir al ataque, negando así a los usuarios legítimos el acceso a los recursos del servidor. Estas solicitudes suelen enviarse de forma masiva a través de un botnet, lo que aumenta la potencia global del ataque.</p>
+                    <p>Estos ataques DDoS pueden ser una de las amenazas más avanzadas que no son vulnerabilidades que enfrentan los servidores web en la actualidad. Es muy difícil para los dispositivos de seguridad de la red distinguir entre el tráfico HTTP legítimo y el tráfico HTTP malicioso, y si no se maneja correctamente, podría causar un alto número de detecciones de falsos positivos. Los motores de detección basados en la velocidad tampoco consiguen detectar este tipo de ataques, ya que el volumen de tráfico de las saturaciones HTTP pueden estar por debajo de los umbrales de detección. Por ello, es necesario utilizar varios parámetros de detección, incluidos los basados en la velocidad y los invariables.</p>
+                    <p>Hoy en día, la gran mayoría del tráfico de Internet está cifrado. La mayoría de los ataques de saturación HTTP son saturaciones HTTPS. Las saturaciones encriptadas no solo son más potentes debido a la gran cantidad de recursos del servidor que se necesitan para manejarlas, sino que también añaden una capa de complejidad a la hora de mitigar estos ataques, ya que las defensas DDoS normalmente no pueden inspeccionar el contenido de las solicitudes HTTPS sin descifrar completamente todo el tráfico.</p>
+                </div>
+                <div class="contenedorImagen">
+                    <img src="IMG/DDoS.png">
+                </div>
+
+
+                <h3 class="tituloSecundario">Contrabando de solicitudes HTTP</h3>
+                <div class="textoParrafos">
+                    <p>El contrabando de solicitudes HTTP, también conocido como ataques de desincronización HTTP, es una técnica de ataque para interferir en la forma en que un sitio web procesa las secuencias de solicitudes HTTP que se reciben de uno o más usuarios. Permite al atacante "contrabandear" una solicitud a un servidor web sin que los dispositivos entre el atacante y el servidor web lo perciban. Las vulnerabilidades de contrabando de solicitudes HTTP suelen ser de naturaleza crítica, ya que permiten a un atacante saltarse los controles de seguridad, interferir con otras sesiones de usuario, obtener acceso no autorizado a datos sensibles y comprometer directamente a otros usuarios de la aplicación.</p>
+                </div>
+                <div class="contenedorImagen">
+                    <img src="IMG/contSolHTTP.png">
+                </div>
+
+                <h3 class="tituloSecundario">Recorrido transversal de ruta de archivo / recorrido del directorio</h3>
+                <div class="textoParrafos">
+                    <p>Un ataque transversal de ruta de archivo (también conocido como recorrido del directorio) es una vulnerabilidad de seguridad web que permite a un atacante acceder a archivos y directorios que están almacenados fuera de la carpeta raíz de la web. Estos archivos pueden incluir el código y los datos de la aplicación, las credenciales de los sistemas de back-end y los archivos sensibles del sistema operativo.</p>
+                    <p>Los atacantes logran un ataque transversal de ruta de archivo engañando al servidor web, o a la aplicación web que se ejecuta en el servidor, para que devuelva archivos que existen fuera de la carpeta raíz de la Web.</p>
+                </div>
+                <div class="contenedorImagen">
+                    <img src="IMG/recorridoDir.png">
+                </div>
+
+
+                <h3 class="tituloSecundario">Falsificación de solicitud del lado del servidor (SSRF)</h3>
+                <div class="textoParrafos">
+                    <p>La falsificación de solicitud del lado del servidor (SSRF) se produce cuando un atacante explota una vulnerabilidad de seguridad web para inducir a la aplicación del lado del servidor a realizar solicitudes HTTP a un dominio arbitrario de su elección.</p>
+                    <p>En un ataque de este tipo, el actor de la amenaza puede abusar de la funcionalidad del servidor para leer o actualizar los recursos internos. El atacante puede suministrar o modificar una URL, que el código que se ejecuta en el servidor leerá o enviará datos y permitirá al atacante leer la configuración del servidor, como los metadatos de AWS, conectarse a servicios internos como bases de datos habilitadas para HTTP o efectuar solicitudes de envío hacia servicios internos que no están destinados a ser expuestos.</p>
+                    <p>Un ataque exitoso de SSRF a menudo puede dar lugar a acciones no autorizadas o al acceso a datos dentro de la organización, ya sea en la propia aplicación vulnerable o en otros sistemas de back-end con los que la aplicación puede comunicarse. En algunas situaciones, la vulnerabilidad SSRF podría permitir a un atacante efectuar la ejecución de un comando arbitrario. En algunos casos, una explotación de SSRF que provoque conexiones a sistemas externos de terceros podría dar lugar a ataques maliciosos posteriores que se percibirían como originados por la organización que alberga la aplicación vulnerable.</p>
+                </div>
+                <div class="contenedorImagen">
+                    <img src="IMG/SSRF.png">
+                </div>
+
+
+                <h3 class="tituloSecundario">Clickjacking</h3>
+                <div class="textoParrafos">
+                    <p>Clickjacking es un tipo de ataque que ocurre del lado del cliente, y su propósito es engañar a los usuarios de la aplicación para que hagan clic en algo diferente a lo que perciben. Los hackers ejecutan este tipo de ataque ocultando malware o código malicioso en un control de apariencia legítima en un sitio web, principalmente en JavaScript de servicios de terceros que a menudo no son supervisados por las herramientas de seguridad estándar de la aplicación, explotando así las vulnerabilidades en la cadena de suministro de la aplicación.</p>
+                    <p>Es una técnica maliciosa utilizada por un atacante para registrar los clics del usuario infectado en Internet. Esto puede utilizarse para dirigir el tráfico a un sitio específico o para hacer que a un usuario le guste o acepte una aplicación de Facebook. Los propósitos más nefastos podrían ser recoger información sensible guardada en un navegador, como las contraseñas, o instalar contenido malicioso.</p>
+                </div>
+                <div class="contenedorImagen">
+                    <img src="IMG/clickjacking.png">
+                </div>
+
+
+                <h2 class="tituloSecundario">Protección de aplicaciones web con tecnología WAF</h2>
+                <h3 class="tituloSecundario">Cómo mejora WAF la seguridad de las aplicaciones web</h3>
+
+                
+                <div class="textoParrafos">
+                    <p>Además de ofrecer una defensa adaptativa contra amenazas, WAF mejora la seguridad de las aplicaciones web al proporcionar</p>
+                </div>
+
+                <div class="lista">
+                    <ul>
+                        <li>Detección de anomalías: Identifica patrones inusuales o amenazas automatizadas, como picos repentinos de inicio de sesión. Esto puede ayudar a evitar que las organizaciones sean víctimas de ataques de relleno de credenciales en aplicaciones empresariales. El informe de Fortinet sobre la seguridad de aplicación web en 2025, titulado « » (La era de la automatización de amenazas), revela que el 30 % de las organizaciones han sufrido intentos de robo de credenciales, por lo que la detección de anomalías se convierte en algo crucial.</li>
+                        <li>Seguridad multicapa integrada: WAF funciona junto con soluciones IPS y DDoS para ofrecer una protección de extremo a extremo. Por ejemplo, el tráfico DDoS se redirige a sistemas de mitigación sin afectar a los usuarios en tiempo real.</li>
+                        <li>Habilitación del cumplimiento: Es compatible con normas reglamentarias como PCI DSS. Por lo tanto, los datos personales y de pago enviados a través de aplicaciones web se supervisan y protegen automáticamente.</li>
+                        <li>Experiencia del usuario fluida: Con la tecnología WAF, las organizaciones pueden mantener la disponibilidad de las aplicaciones y bloquear los ataques. Por ejemplo, los empleados y los clientes pueden seguir utilizando los servicios web sin interrupciones durante la mitigación de amenazas.</li>
+                    </ul>
+                </div>
+                                
+                <div class="contenedorImagen">
+                    <img src="IMG/proteccion.png">
+                </div>
+                
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2025 Guillermo Siuki. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

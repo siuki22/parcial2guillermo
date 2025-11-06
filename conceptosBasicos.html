@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Conceptos Básicos</title>
+</head>
+
+<body>
+    <div id="contenedorPrincipal">
+        
+        <header id= "encabezado">
+            <h1>Entendiendo los WAF: Conceptos Básicos</h1>
+        </header>
+        
+        <nav id="menuNav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conceptosBasicos.html">Conceptos Generales</a></li>
+                <li><a href="implementacion-proteccion.html.">Tipos, Amenazas y Protección</a></li>
+                <li><a href="evolucion-comparativa.html">Evolución y Comparacion</a></li>
+                <li><a href="autor.html">Autor</a></li>
+                <li><a href="bibliografia.html">Bibliografía</a></li>
+            </ul>
+        </nav>
+
+        <main class="contenido">
+            <div class="bloqueInfo">
+                <h2 class="tituloSecundario">¿Qué es un WAF?</h2>
+
+                <div class="textoParrafos">
+                    <p>Un WAF, o Web Application Firewall, es un sistema de seguridad diseñado específicamente para proteger aplicaciones web frente a ataques que explotan vulnerabilidades a nivel de aplicación. A diferencia de los firewalls tradicionales, que actúan sobre el tráfico de red en general, el WAF opera principalmente en la capa 7 del modelo OSI, también conocida como la capa de aplicación.</p>
+                    <p>Su propósito principal es inspeccionar, filtrar y monitorear las solicitudes HTTP/S que llegan a nuestras aplicaciones. Esto permite detectar y bloquear actividades maliciosas como inyecciones SQL, cross-site scripting (XSS), ataques de día cero o tráfico automatizado no deseado.</p>
+                    <p>En esencia, podríamos decir que el WAF actúa como un guardia de seguridad virtual que supervisa constantemente lo que entra y sale de nuestras aplicaciones web. Y lo hace utilizando una combinación de reglas, políticas y análisis de patrones que ayudan a identificar comportamientos anómalos o potencialmente peligrosos. Esta capa de defensa adicional no solo refuerza nuestra postura de ciberseguridad, sino que también puede ser un requisito clave para cumplir con normativas como la protección de datos, la seguridad de la información o estándares de compliance.</p>
+                </div>
+                                
+                <div class="contenedorImagen">
+                    <img src="IMG/Definición.png">
+                </div>
+                                
+
+                <h2 class="tituloSecundario">¿Cómo funciona WAF?</h2>
+                <div class="textoParrafos">
+                    <p>Un WAF no se limita a bloquear amenazas genéricas; su verdadero valor está en cómo procesa, interpreta y decide sobre cada solicitud que pasa por él. Para comprender su funcionamiento en profundidad, es importante desglosar cómo examina el tráfico, qué modelos de seguridad aplica y cómo define las políticas que activan sus defensas.</p>
+                    <p>A continuación, exploramos estos tres pilares esenciales para entender cómo actúa un WAF frente a las amenazas más comunes y sofisticadas en la web actual.</p>
+                </div>
+
+                <h3 class="tituloTerceario">Inspección de tráfico HTTP/S (capa 7)</h3>
+                <div class="textoParrafos">
+                    <p>El funcionamiento de un WAF se basa en su capacidad para interceptar y analizar el tráfico HTTP y HTTPS que fluye entre los usuarios y nuestras aplicaciones web. A diferencia de otras herramientas que operan en niveles más bajos del modelo OSI, el WAF actúa en la capa 7, es decir, la capa de aplicación, donde se encuentran los datos y peticiones que los usuarios envían a través de formularios, URLs o cookies.</p>
+                    <p>Cuando un visitante accede a una página web protegida con un WAF, cada solicitud es evaluada antes de llegar al servidor de la aplicación. El firewall examina parámetros como la URL, los encabezados, el cuerpo de la solicitud e incluso las cookies, en busca de indicios de actividades maliciosas. Esta inspección profunda permite detectar ataques sofisticados, como intentos de inyección de comandos, XSS, fuerza bruta o explotación de APIs vulnerables.</p>
+                    <p>Además, el WAF puede actuar en tiempo real, bloqueando o redirigiendo automáticamente aquellas solicitudes que representen un riesgo. Esto proporciona una defensa proactiva y flexible, especialmente útil en entornos donde la seguridad debe ser constante y adaptable.</p>
+                </div>
+
+                <h3 class="tituloTerceario">Modelos de seguridad: lista negra vs lista blanca</h3>
+                
+                <div class="textoParrafos">
+                    <p>Uno de los aspectos más importantes en la configuración de un WAF es el modelo de seguridad que se elige para definir cómo se deben tratar las solicitudes entrantes. Aquí encontramos dos enfoques principales: el de lista negra y el de lista blanca.</p>
+                </div>  
+                
+                <div class="lista">
+                    <ul>
+                        <li>El modelo de lista negra (blacklist) funciona bloqueando únicamente aquellas solicitudes que coincidan con patrones o comportamientos conocidos como maliciosos. Es útil para detener ataques comunes como inyecciones de código o escaneos automatizados, sin afectar al tráfico legítimo. Sin embargo, puede dejar pasar ataques nuevos o no detectados previamente.</li>
+                        <li>El modelo de lista blanca (whitelist), en cambio, adopta una postura más restrictiva: solo permite aquellas solicitudes que han sido definidas explícitamente como seguras. Este enfoque reduce en gran medida el riesgo de ataques desconocidos, pero requiere una configuración mucho más cuidadosa y precisa, ya que cualquier petición no contemplada será bloqueada.</li>
+                    </ul>
+                </div>
+
+                <div class="textoParrafos">
+                    <p>Algunos WAF avanzados permiten combinar ambos modelos o aplicar uno u otro en función de la ruta, tipo de usuario o contexto de uso. Esto ofrece una mayor flexibilidad para adaptarse tanto a entornos de desarrollo como a sistemas críticos en producción.</p>
+                </div>
+
+                <h3 class="tituloTerceario">Políticas y reglas: firmas, patrones y análisis sintáctico</h3>
+                    
+                <div class="textoParrafos">
+                    <p>La verdadera potencia de un WAF reside en su sistema de reglas y políticas personalizables, que determinan cómo debe comportarse ante distintas clases de tráfico. Estas reglas pueden basarse en varios métodos de detección, entre los que destacan:</p>
+                </div>
+
+                <div class="lista">
+                    <ul>
+                        <li>Firmas predefinidas, que permiten identificar ataques ya conocidos gracias a patrones específicos en el contenido de las peticiones.</li>
+                        <li>Análisis de patrones, que detectan secuencias de caracteres o comportamientos repetitivos que suelen asociarse a bots o scripts automatizados.</li>
+                        <li>Análisis sintáctico o semántico, donde el WAF interpreta el contexto de la solicitud y evalúa si tiene lógica o si intenta manipular la aplicación de forma anómala.</li>
+                    </ul>
+                </div>
+
+                <div class="textoParrafos">
+                    <p>Estas reglas pueden aplicarse de forma global o granular, permitiendo configurar respuestas distintas según el tipo de petición, el origen geográfico, el endpoint de la API o el tipo de usuario. Además, muchas implementaciones permiten establecer modos de funcionamiento como bloqueo automático, solo monitoreo o registro para revisión posterior.</p>
+                    <p>En conjunto, esta combinación de inspección profunda, modelos de seguridad inteligentes y reglas configurables convierte al WAF en una herramienta indispensable para garantizar la seguridad de nuestras aplicaciones web frente a amenazas actuales y emergentes.</p>
+                </div>  
+
+                <div class="contenedorImagen">
+                    <img src="IMG/Funcionamiento.png">
+                </div>
+
+                    
+                <h2 class="tituloSecundario"> ¿Por qué es importante protegerse frente a ciberataques?</h2>
+
+                <div class="textoParrafos">
+                    <p>Es esencial protegerse contra ciberataques y mantener la seguridad en línea. Las empresas que ofrecen servicios en la web, como ventas en línea, reservas, portales de clientes o pacientes, y servicios web, deben garantizar la disponibilidad constante de estos servicios para sus clientes.</p>
+                    <p>Sin embargo, la seguridad es igualmente importante, ya que estos servicios manejan datos sensibles, como información de clientes y detalles de tarjetas, que son un objetivo principal para los hackers.</p>
+                    <p>Por lo tanto, las empresas deben priorizar la seguridad sin comprometer el rendimiento del sitio web o la plataforma, ni la experiencia del cliente. Esto implica implementar medidas de seguridad robustas, como firewalls, encriptación de datos, autenticación de usuarios y actualizaciones regulares del software para proteger contra posibles vulnerabilidades.</p>
+                    <p>Además, es crucial capacitar al personal en prácticas seguras de manejo de datos y mantenerse al tanto de las últimas amenazas cibernéticas para estar preparados y responder eficazmente en caso de un ataque.</p>
+                    <p>Los firewalls de aplicaciones web ayudan a proteger las aplicaciones implementadas en la nube pública, en entornos locales y en entornos con controles de acceso basados en datos de geolocalización, direcciones IP en la lista blanca y en la lista negra, el localizador uniforme de recursos de protocolo de transferencia de hipertexto (URL de HTTP) y el encabezado HTTP. Los WAF pueden identificar y bloquear el tráfico de bots maliciosos con un conjunto avanzado de métodos de verificación, incluido JavaScript, una prueba de Turing pública completamente automatizada para diferenciar computadoras de seres humanos (Completely Automated Public Turing Test to tell Computers and Humans Apart, CAPTCHA), interpretación de dispositivos y algoritmos de interacción humana. Los WAF protegen las aplicaciones orientadas a Internet contra ataques como resultado de la inteligencia de amenazas integrada que se agrega desde varios orígenes y las reglas de detección del Open Web Application Security Project (OWASP).</p>
+
+                </div>
+
+                <div class="contenedorImagen">
+                    <img src="IMG/Importancia.png">
+                </div>
+
+                <h2 class="tituloSecundario">Claves para elegir la solución adecuada de protección web</h2>
+                
+                <div class="textoParrafos">
+                    <p>¿Qué es WAF? no es suficiente. Al seleccionar una solución de seguridad de aplicación web, asegúrese de que la solución ofrezca capacidades tales como</p>
+                </div>
+
+                <div class="lista">
+                    <ul>
+                        <li>Gestión de las aplicaciones y el tráfico de la organización.</li>
+                        <li>Integración con la infraestructura existente.</li>
+                        <li>Protección contra una amplia gama de amenazas, incluidos los ataques DDoS.</li>
+                        <li>Cumplimiento de los requisitos normativos.</li>
+                        <li>Reducción de la latencia y optimización del rendimiento de las aplicaciones.</li>
+                        <li>Proporciona implementación, gestión y escalabilidad rentables.</li>
+                    </ul>
+                </div>
+                         
+                
+                <div class="contenedorImagen">
+                    <img src="IMG/claves.png">
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2025 Guillermo Siuki. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

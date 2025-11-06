@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Evolución y Comparativa</title>
+</head>
+<body>
+        <div id="contenedorPrincipal">
+        
+        <header id= "encabezado">
+            <h1>Evolución y Futuro del Firewall de Aplicaciones Web (WAF)</h1>
+        </header>
+        
+        <nav id="menuNav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conceptosBasicos.html">Conceptos Generales</a></li>
+                <li><a href="implementacion-proteccion.html.">Tipos, Amenazas y Protección</a></li>
+                <li><a href="evolucion-comparativa.html">Evolución y Comparacion</a></li>
+                <li><a href="autor.html">Autor</a></li>
+                <li><a href="bibliografia.html">Bibliografía</a></li>
+            </ul>
+        </nav>
+
+        <main class="contenido">
+            <div class="bloqueInfo">
+                <h2 class="tituloSecundario">Orígenes y desarrollo de la tecnología WAF</h2>
+
+                <div class="textoParrafos">
+                    <p>En la era anterior a la nube, las organizaciones utilizaban firewall para segmentar las redes internas de las externas y proteger los activos del tráfico malicioso. Sin embargo, el enfoque tradicional del firewall no es ideal para la nube, ya que muchas aplicaciones no pueden aislarse en redes internas porque necesitan conectarse a Internet.</p>
+                </div>
+
+                <div class="lista">
+                    <ul>
+                        <li>Desarrollo de la tecnología WAF: Los esfuerzos por protegerse contra el aumento de los ataques a las aplicaciones web llevaron al desarrollo de la tecnología WAF a finales de la década de 1990. Las primeras versiones del Firewall de aplicaciones web protegían las aplicaciones contra el envío de caracteres ilegales. Situados en línea entre la aplicación y el cliente, estos WAF filtran el tráfico HTTP hacia y desde el servicio web para bloquear las solicitudes maliciosas.</li>
+                        <li>Filtrado básico: Los primeros WAF ayudaban a las organizaciones a filtrar el tráfico para bloquear amenazas y controlar el acceso. Sin embargo, no podían gestionar ciberataques complejos, como inyecciones SQL, XSS y ataques DDoS. Por lo tanto, las organizaciones necesitaban soluciones que pudieran analizar el tráfico e implementar medidas adaptativas de mitigación de amenazas en tiempo real.</li>
+                        <li>Características modernas de WAF: A continuación llegaron los WAF avanzados, que implementaban tecnologías como la inspección profunda de paquetes, la detección de amenazas basada en IA y el análisis del comportamiento. Estos WAF son capaces de identificar anomalías y riesgos emergentes. Además, la integración con las reglas de ModSecurity permite aplicar políticas de seguridad más detalladas.</li>
+                        <li>WAF de próxima generación (NGWAF): Los NGWAF amplían las capacidades tradicionales de los WAF con mitigación de bots, protección de API, descifrado SSL/TLS y supervisión avanzada. Ofrecen un enfoque integral y proactivo para proteger las aplicaciones web.</li>
+                    </ul>
+                </div>
+                                
+                <div class="contenedorImagen">
+                    <img src="IMG/evolucion.png">
+                </div>
+
+ 
+                <h2 class="tituloSecundario">Ventajas y desafíos actuales del WAF</h2>
+                <h3 class="tituloSecundario">Ventajas de WAF</h3>
+
+                <div class="lista">
+                    <ul>
+                        <li>Mitigación de amenazas: Como se ha explicado, los WAF detectan y bloquean ataques, como la inyección de SQL y XSS, utilizando firmas conocidas.</li>
+                        <li>Despliegue rápido: Los WAF se pueden configurar a nivel de red con cambios mínimos o nulos en las aplicaciones preexistentes.</li>
+                        <li>Protección del borde: Los WAF ofrecen protección contra ataques DDoS y actores maliciosos ubicados en el perímetro de red o en el perímetro de la nube.</li>
+                        <li>Control centralizado: Los equipos de seguridad pueden gestionar reglas y aplicar políticas desde una plataforma unificada.</li>
+                </div>
+                             
+                <h3 class="tituloSecundario">Desventajas de WAF</h3>
+
+                <div class="lista">
+                    <ul>
+                        <li>Contexto restringido: Los WAF solo analizan el contenido de las solicitudes, lo que los hace vulnerables a los ataques que explotan la lógica de las aplicaciones.</li>
+                        <li>Bloqueo incorrecto: En ocasiones, la detección basada en firmas puede generar falsos positivos, bloqueando tráfico legítimo.</li>
+                        <li>Brechas en la integración del centro de operaciones de seguridad (SOC): Una configuración incorrecta puede impedir que los WAF envíen datos detallados a nivel de aplicación al Service Organization Controls.</li>
+                </div>
+
+                <div class="contenedorImagen">
+                    <img src="IMG/VentajaDesventaja.png">
+                </div>
+                
+
+                <h2 class="tituloSecundario">El futuro de la seguridad web: el enfoque WaaS</h2>
+                
+                <div class="textoParrafos">
+                    <p>El firewall de aplicaciones web como servicio (WaaS) es una solución de seguridad nativa de la nube que evoluciona para abordar las complejidades de las infraestructuras digitales modernas. Los avances actuales incluyen la integración del aprendizaje automático para la detección de amenazas en tiempo real, estrategias mejoradas de mitigación de bots y protección API sin fisuras. Estas características de WAF ayudan a superar retos como el aumento del volumen y la sofisticación de los ataques, la necesidad de una implementación rápida y la complejidad de gestionar la seguridad en entornos diversos. Están diseñados para implementarse rápidamente y requieren una configuración mínima.</p>
+                </div>
+
+                <div class="lista">
+                    <ul>
+                        <li>Detección de anomalías: Identifica patrones inusuales o amenazas automatizadas, como picos repentinos de inicio de sesión. Esto puede ayudar a evitar que las organizaciones sean víctimas de ataques de relleno de credenciales en aplicaciones empresariales. El informe de Fortinet sobre la seguridad de aplicación web en 2025, titulado « » (La era de la automatización de amenazas), revela que el 30 % de las organizaciones han sufrido intentos de robo de credenciales, por lo que la detección de anomalías se convierte en algo crucial.</li>
+                        <li>Seguridad multicapa integrada: WAF funciona junto con soluciones IPS y DDoS para ofrecer una protección de extremo a extremo. Por ejemplo, el tráfico DDoS se redirige a sistemas de mitigación sin afectar a los usuarios en tiempo real.</li>
+                        <li>Habilitación del cumplimiento: Es compatible con normas reglamentarias como PCI DSS. Por lo tanto, los datos personales y de pago enviados a través de aplicaciones web se supervisan y protegen automáticamente.</li>
+                        <li>Experiencia del usuario fluida: Con la tecnología WAF, las organizaciones pueden mantener la disponibilidad de las aplicaciones y bloquear los ataques. Por ejemplo, los empleados y los clientes pueden seguir utilizando los servicios web sin interrupciones durante la mitigación de amenazas.</li>
+                    </ul>
+                </div>
+                                
+                <div class="contenedorImagen">
+                    <img src="IMG/WaaS.png">
+                </div>
+
+                
+                
+                <h3 class="tituloTerceario">WAF frente a otros modelos de seguridad</h3>
+
+                <h4 class="tituloCuaternario">WAF frente a NGFW</h4>
+
+                <div class="textoParrafos">
+                    <p>La diferencia clave entre los firewall de aplicaciones web (WAF) y los Next Generation Firewalls (NGFW) es que ofrecen diferentes capas de protección. Por ejemplo, los WAF se especializan en proteger aplicaciones web mediante el filtrado del tráfico HTTP/HTTPS y el bloqueo de amenazas como la inyección SQL, los scripts entre sitios (XSS) y otras vulnerabilidades. Por otro lado, los NGFW combinan las funciones tradicionales del firewall con características avanzadas, como la inspección SSL, la prevención de intrusiones y la inteligencia de amenazas. Esto los hace adecuados como firewall de red primarios en una organización. En resumen, los WAF se centran en los ataques de capa de aplicación, mientras que los NGFW proporcionan una mayor visibilidad de la red y de la capa de aplicación.</p>
+                </div>
+
+                <div class="contenedorImagen">
+                    <img src="IMG/NGFW.png">
+                </div>
+                
+                <h4 class="tituloCuaternario">WAF frente a IPS</h4>
+
+                <div class="textoParrafos">
+                    <P>Como se ha indicado, WAF protege las aplicaciones web analizando el tráfico HTTP/HTTPS y bloqueando ataques como la inyección SQL, XSS y DDoS en la capa de aplicación. Por otro lado, un Sistema de prevención de intrusiones (IPS) supervisa el tráfico de red en general. Funciona en las capas 4-7 de OSI para bloquear exploits, malware y amenazas basadas en protocolos. Normalmente, un IPS se implementa antes que un WAF en la pila de seguridad. IPS protege el perímetro de red, mientras que WAF se centra en proteger las aplicaciones web.</P>
+                </div>
+
+                <div class="contenedorImagen">
+                    <img src="IMG/iPS.png">
+                </div>
+                
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2025 Guillermo Siuki. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
